@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#52a5ae">
+  <meta name="description" content="اكتشف منيو آيسكريم العاصمة. آيس كريم، عصائر مثلجة، وميلك شيك على ذوقك، مع تخصيص طلبك وحساب إجماليه بالريال السعودي.">
+  <title>آيسكريم العاصمة | لحظتك الحلوة</title>
+  <link rel="icon" href="assets/al-asemah-logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/al-asemah-logo.png">
+  <link rel="preload" href="assets/tajawal-800.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="style.css?v=a60857a141">
+  <script src="app.js?v=78dac68073" defer></script>
+  <script src="voice-translator.js?v=7ecdbb92f3" defer></script>
+  <script src="motion.js?v=804cf20dd9" defer></script>
+  <script src="experience.js?v=b7570026bb" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#menu">انتقل إلى المنيو</a>
+  <div class="header-shell">
+  <header class="header wrap">
+    <a class="brand" href="#" aria-label="آيسكريم العاصمة، الرئيسية">
+      <img class="brand-logo" src="assets/al-asemah-logo.png" alt="" width="64" height="64">
+      <span><strong>آيسكريم العاصمة</strong><small lang="en" dir="ltr">Ice Cream Al Asemah</small></span>
+    </a>
+    <nav class="nav" aria-label="التنقل الرئيسي"><a href="#menu" class="nav-active">المنيو</a><button data-action="favorites">المفضلة <span id="fav-count"></span></button><button class="voice-nav-button" data-action="voice-translator" aria-label="افتح المترجم الصوتي"><span data-icon="globe"></span><span class="voice-nav-label">ترجمة صوتية</span></button></nav>
+    <button class="cart-button" data-action="cart" aria-label="افتح سلة الطلب"><span data-icon="bag"></span><span class="cart-label">سلة الطلب</span><span class="cart-count">0</span></button>
+  </header>
+  </div>
+
+  <main>
+    <section class="hero wrap hero-modern" aria-labelledby="hero-title">
+      <div class="hero-copy" data-motion>
+        <div class="eyebrow hero-eyebrow"><span class="hero-brand-dot" aria-hidden="true"></span> آيسكريم العاصمة</div>
+        <h1 id="hero-title">نكهتك المفضلة،<br><span>بطريقتك.</span></h1>
+        <p>اختر نكهتك، خصّص إضافاتك، واجمع اختياراتك في مكان واحد. لحظة حلوة، تبدأ على ذوقك.</p>
+        <div class="hero-actions"><a class="primary-button hero-cta" href="#menu">تصفّح المنيو <span data-icon="arrow"></span></a><button class="secondary-button hero-translator" data-action="voice-translator"><span data-icon="globe"></span> مترجمك الصوتي</button></div>
+        <div class="hero-meta"><span>آيس كريم</span><i aria-hidden="true"></i><span>عصائر مثلجة</span><i aria-hidden="true"></i><span>ميلك شيك</span></div>
+      </div>
+      <div class="hero-showcase" data-motion data-motion-delay="60">
+        <div class="showcase-topline"><span>من اختياراتنا لك</span><span id="hero-step" dir="ltr" aria-hidden="true">01 / 03</span></div>
+        <button class="hero-preview-button" data-product="vanilla" aria-label="اختر فانيلا كلاسيك"><img id="hero-product-image" src="assets/vanilla-sprinkles.jpg" alt="فانيلا كلاسيك" width="400" height="400" fetchpriority="high"><span class="preview-category" id="hero-category">آيس كريم</span></button>
+        <div class="showcase-caption"><div><small>خصّصها على ذوقك</small><h2 id="hero-product-title">فانيلا كلاسيك</h2></div><button id="hero-product-add" class="showcase-add" data-product="vanilla" aria-label="أضف فانيلا كلاسيك"><span id="hero-product-price">12 ر.س</span><span data-icon="plus"></span></button></div>
+        <div class="hero-switcher" role="group" aria-label="استكشف اختيارات العاصمة"><button class="active" data-hero-product="vanilla" data-name="فانيلا كلاسيك" data-image="assets/vanilla-sprinkles.jpg" data-price="12" data-label="آيس كريم" aria-pressed="true">آيس كريم</button><button data-hero-product="orange" data-name="برتقال مثلّج" data-image="assets/orange-juice.jpg" data-price="14" data-label="عصائر مثلجة" aria-pressed="false">عصائر مثلجة</button><button data-hero-product="berry-shake" data-name="ميلك شيك التوت" data-image="assets/berry-smoothie.jpg" data-price="20" data-label="ميلك شيك" aria-pressed="false">ميلك شيك</button></div>
+        <p id="hero-switch-status" class="sr-only" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="menu" class="menu-section wrap" aria-labelledby="menu-title">
+      <div class="section-heading" data-motion><div><div class="eyebrow">المنيو</div><h2 id="menu-title">كل نكهة، لها حكاية.</h2><p>اختياراتك الحلوة تبدأ من هنا.</p></div><label class="search-box"><span data-icon="search"></span><input id="search" type="search" placeholder="ابحث عن نكهتك المفضلة..." aria-label="ابحث في المنيو" autocomplete="off"></label></div>
+      <div class="menu-layout">
+        <aside class="menu-controls" data-motion aria-label="تصنيفات المنيو"><p class="sidebar-label">استكشف المنيو</p><div class="categories" aria-label="تصنيفات المنيو"><button class="category active" data-category="all" aria-pressed="true"><span data-icon="grid"></span><span class="category-label">كل الأصناف</span><span class="category-count" data-count-category="all">10</span></button><button class="category" data-category="icecream" aria-pressed="false"><span data-icon="cone"></span><span class="category-label">آيس كريم</span><span class="category-count" data-count-category="icecream">3</span></button><button class="category" data-category="juice" aria-pressed="false"><span data-icon="juice"></span><span class="category-label">عصائر مثلجة</span><span class="category-count" data-count-category="juice">4</span></button><button class="category" data-category="shake" aria-pressed="false"><span data-icon="cup"></span><span class="category-label">ميلك شيك</span><span class="category-count" data-count-category="shake">1</span></button><button class="category" data-category="popsicle" aria-pressed="false"><span data-icon="pop"></span><span class="category-label">مثلجات الفواكه</span><span class="category-count" data-count-category="popsicle">2</span></button></div></aside>
+        <div class="menu-catalog">
+          <div class="results-bar"><span id="results-count" role="status" aria-live="polite"></span><div class="catalog-actions"><div class="view-toggle" role="group" aria-label="طريقة عرض المنتجات"><button class="active" data-menu-view="grid" aria-label="عرض البطاقات" title="عرض البطاقات" aria-pressed="true"><span data-icon="grid"></span></button><button data-menu-view="list" aria-label="عرض القائمة" title="عرض القائمة" aria-pressed="false"><span data-icon="list"></span></button></div><div class="sort-control"><select id="sort" aria-label="ترتيب الأصناف"><option value="recommended">اختياراتنا لك</option><option value="price-low">السعر: من الأقل</option><option value="price-high">السعر: من الأعلى</option><option value="name">الاسم</option></select></div></div></div>
+          <div id="products" class="product-grid" data-view="grid"></div>
+          <div id="empty-results" class="empty-results" hidden><span data-icon="search"></span><h3>نكهتك مو ظاهرة؟</h3><p>جرّب كلمة ثانية أو تصنيفًا مختلفًا.</p><button class="secondary-button" data-action="reset">عرض كل الأصناف</button></div>
+          <p class="sample-note"><span data-icon="info"></span> منيو تجريبي: الأصناف والأسعار والصور توضيحية، وتُعتمد من المحل قبل استقبال الطلبات.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="voice-launch wrap" data-motion aria-labelledby="voice-launch-title">
+      <span class="voice-launch-icon" data-icon="mic"></span>
+      <div class="voice-launch-copy"><span class="voice-kicker">أهلًا بكل اللغات</span><h2 id="voice-launch-title">تكلّم بلغتك… ونترجمها بالعربي.</h2><p>تركي · English · 中文 · Français · کوردی · Kurdî</p></div>
+      <button class="primary-button" data-action="voice-translator">افتح المترجم الصوتي <span data-icon="arrow"></span></button>
+    </section>
+  </main>
+  <footer class="footer wrap" data-motion><a class="brand footer-brand" href="#"><img class="brand-logo" src="assets/al-asemah-logo.png" alt="" width="50" height="50"><span><strong>آيسكريم العاصمة</strong><small lang="en" dir="ltr">Ice Cream Al Asemah</small></span></a><p>آيس كريم <span>•</span> عصائر مثلجة <span>•</span> سعادة</p><button data-action="about">عن المنيو <span data-icon="arrow"></span></button></footer>
+  <button id="mobile-cart" class="mobile-cart" data-action="cart" hidden><span><span data-icon="bag"></span>عرض السلة <b class="cart-count">0</b></span><strong id="mobile-total">0 ر.س</strong></button>
+  <dialog id="product-dialog" class="product-dialog" aria-labelledby="product-title"></dialog>
+  <dialog id="cart-dialog" class="cart-dialog" aria-labelledby="cart-title"></dialog>
+  <dialog id="info-dialog" class="info-dialog" aria-labelledby="info-title"></dialog>
+  <dialog id="translator-dialog" class="voice-dialog" aria-labelledby="voice-title" aria-describedby="voice-intro">
+    <button id="voice-close" class="dialog-close" aria-label="إغلاق المترجم الصوتي"><span data-icon="close"></span></button>
+    <div class="voice-dialog-header"><span class="voice-kicker"><span data-icon="globe"></span> بلغتك نسمعك</span><h2 id="voice-title">المترجم الصوتي المباشر</h2><p id="voice-intro">اختر لغتك، وابدأ الكلام. تظهر الترجمة بعد كل جملة وتُقرأ بالعربية.</p></div>
+    <div class="voice-dialog-content">
+      <div class="voice-language-row"><label class="voice-language-field" for="voice-language"><span>لغة المتحدث</span><select id="voice-language"><option value="en">English — الإنجليزية</option><option value="tr">Türkçe — التركية</option><option value="zh-CN">中文 — الصينية (الماندرين)</option><option value="fr">Français — الفرنسية</option><option value="ku">Kurdî — الكردية الكرمانجية</option><option value="ckb">کوردی — الكردية السورانية</option></select></label><span class="voice-direction" data-icon="arrow"></span><div class="voice-target"><span>الترجمة إلى</span><strong>العربية <span>AR</span></strong></div></div>
+      <p id="voice-language-note" class="voice-language-note" hidden></p>
+      <div class="voice-mic-area"><button id="voice-start" class="voice-start"><span class="voice-mic-circle" data-icon="mic"></span><span id="voice-start-label">ابدأ الترجمة الصوتية</span></button><div id="voice-status" class="voice-status" role="status" aria-live="polite" data-state="idle"><i aria-hidden="true"></i><span id="voice-status-text">جاهز للترجمة</span></div><p id="voice-support" class="voice-support">اسمح باستخدام الميكروفون، ثم تكلّم بجملة قصيرة وواضحة.</p></div>
+      <div class="voice-panels"><section class="voice-panel"><div class="voice-panel-heading"><label for="voice-source">الكلام الأصلي <small id="voice-source-label">English</small></label><button id="voice-clear" class="voice-text-button" aria-label="مسح النص والترجمة">مسح</button></div><textarea id="voice-source" rows="4" maxlength="1000" dir="auto" placeholder="سيظهر كلامك هنا… أو اكتب النص لترجمته." aria-label="النص الأصلي القابل للتحرير"></textarea><button id="voice-translate" class="voice-manual-translate">ترجم النص للعربية <span data-icon="arrow"></span></button></section><section class="voice-panel voice-arabic-panel"><div class="voice-panel-heading"><span>الترجمة العربية <small>العربية</small></span><span data-icon="volume"></span></div><div id="voice-output" class="voice-output" dir="rtl" role="status" aria-live="polite" data-placeholder="ترجمتك العربية تظهر هنا."></div><div class="voice-output-actions"><button id="voice-read" class="voice-text-button" disabled><span data-icon="volume"></span> استمع</button><button id="voice-stop-audio" class="voice-text-button" disabled><span data-icon="stop"></span> أوقف الصوت</button><button id="voice-copy" class="voice-text-button" disabled><span data-icon="copy"></span> نسخ</button></div></section></div>
+      <label class="voice-auto-read"><input type="checkbox" id="voice-auto-read" checked><span>نطق الترجمة العربية تلقائيًا</span></label>
+      <p class="voice-footnote"><span data-icon="info"></span><span>يعتمد التعرف والنطق على دعم المتصفح والأصوات العربية المتاحة على جهازك. يُعالَج الكلام عبر خدمة المتصفح، ويُرسل النص إلى MyMemory للترجمة؛ تخضع الخدمة لحدّ استخدام يومي.</span></p>
+    </div>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript">يرجى تفعيل JavaScript لعرض الأصناف وتخصيص طلبك.</p></noscript>
+</body>
+</html>
